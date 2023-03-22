@@ -2,7 +2,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  justify-items: center;
+  width: 60%;
+  padding: 5%;
 }
+
+
 .audio {
   position: relative;
   width: 200px;
@@ -53,10 +58,22 @@
   }
 }
 
-.audio span {
+.stopAudio {
   position: absolute;
   inset: 5px;
   border-radius: 16px;
   background: #0c1022;
+  z-index: 1;
+}
+
+.playAudio {
+  position: absolute;
+  inset: 5px;
+  border-radius: 16px;
+  background: linear-gradient(
+    156deg,
+    rgba(0, 204, 255, 1) 0%,
+    rgba(212, 0, 212, 1) 62%
+  );
   z-index: 1;
 }

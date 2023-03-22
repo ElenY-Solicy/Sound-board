@@ -1,5 +1,4 @@
 import Board from "./components/Board";
-
 import "./index.css";
 
 function App() {
